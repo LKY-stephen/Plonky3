@@ -6,12 +6,14 @@ extern crate alloc;
 
 mod duplex_challenger;
 mod hash_challenger;
+mod linear_challenger;
 
 use alloc::vec::Vec;
 use core::array;
 
 pub use duplex_challenger::*;
 pub use hash_challenger::*;
+pub use linear_challenger::*;
 use p3_field::{AbstractExtensionField, Field};
 
 pub trait CanObserve<T> {
